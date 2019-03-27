@@ -1,0 +1,316 @@
+* {padding:0;margin:0;}
+/* font-family: "RobotoLight"; */
+@font-face {
+    font-family: "RobotoLight";
+    src: url("fonts/RobotoLight/RobotoLight.eot");
+    src: url("fonts/RobotoLight/RobotoLight.eot?#iefix")format("embedded-opentype"),
+    url("fonts/RobotoLight/RobotoLight.woff") format("woff"),
+    url("fonts/RobotoLight/RobotoLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+.clearfix:before,
+.clearfix:after {content: " "; display: table;}
+.clearfix:after {clear: both;}
+
+body {background:url("background_main.gif") repeat;font-family:Verdana, Geneva, sans-serif;}
+a {color:#000;text-decoration:none;}
+a:hover {text-decoration:none;}
+textarea {resize:none;}
+h1 { font:38px/38px calibri,arial;text-align:center;color:#000;}
+h2 {color: #282828; font-size: 22px; font-weight: 100; font-family: 'RobotoLight';}
+h3 {font-size:29px; font-family: 'RobotoLight'; font-weight:normal; color:#333; margin: 0;}
+p {font: 22px 'RobotoLight'; font-weight: 100; color: #111;}
+
+.clear{clear: both;}
+.container {width: 1200px; margin: 0 auto;}
+
+/*-------------------------------------------------------------------------*/
+/*шапка*/
+/*-------------------------------------------------------------------------*/
+header {height:90px;position:relative;z-index:1000;width:1000px;margin:0 auto;}
+header img {float:left;margin-top:10px;}
+header p {position:absolute;right:0;top:27px;font-size:20px;line-height:24px;color:#333;}
+header span {font-size:24px;display:block;text-align:right;margin:5px 0;}
+header a {border-bottom:1px dashed #20c186;}
+.header{
+	position: relative;
+	bottom: 660px;
+	z-index: 1000;
+	margin: 10px 50px 30px;
+	width: 405px;
+	height: 550px;
+	color: #fff;
+	font-family: 'calibri';
+}
+/*логотип*/
+.text_only_logo {width: 300px; margin-top: 4px; font-size: 12px;}
+.header .logo {position: relative; display: inline-block; margin: 0 35px 30px; text-align: center; letter-spacing: 0.2px;}
+
+/*блок с описанием под логотипов*/
+.text_only_main_page {padding: 16px 19px 30px; width: 380px; border: 1px solid rgba(255,255,255, 0.13); background: rgba(0,0,0, .5);}
+.text_only_main_page p {width: 100%; font-size: 24px; color: #fff; font-weight: 400; font-family: 'calibri';}
+.text_only_main_page p span {padding-left: 35px;}
+
+/*кнопка регистрации*/
+.text_only_main_page_reg_button {
+	position: relative;
+	z-index: 1000;
+	right: 0;
+	left: 64%;
+	bottom: 1270px;
+	width: 340px;
+	background: #C34E3D;
+	color: #fff;
+	text-align: center;
+	font-family: 'calibri';
+	transition: all 0.7s;
+}
+.text_only_main_page_reg_button:hover{background: #fff;}
+.text_only_main_page_reg_button:hover p,
+.text_only_main_page_reg_button:hover .text_title_reg_button {color: #D9534F;}
+.text_only_main_page_reg_button a {
+	display: inline-block;
+	padding: 40px 0 16px;
+	font-size: 18px;
+	font-weight: bolder;
+	color: #fff;
+	text-decoration: none;
+}
+.text_only_main_page_reg_button p {color: #fff; font-family: 'calibri'; font-size: 18px;}
+.text_title_reg_button {font-size: 24px;line-height: 1; margin: 0; color: #fff;}
+
+/*разметка контейнера для сайта*/
+main {width:1200px; margin:20px auto;}
+
+/*-------------------------------------------------------------------------*/
+/*кнопки "посмотреть пример" - "загрузить"*/
+/*-------------------------------------------------------------------------*/
+
+.buttons {width:350px;margin:-783px auto 5px;overflow:hidden;padding:5px;position:relative;z-index:1001;}
+
+/*кнопка - посмотреть пример*/
+.text_button_example {
+	min-width:300px; 
+	margin-bottom:48px;
+	display:inline-block;
+	height:48px;
+	position:relative;
+	font:16px/48px Verdana, Geneva, sans-serif; 
+	text-decoration:none;
+	text-align:center; 
+	color:#000; 
+	background:#007aff; 
+	box-shadow: 1px 2px 4px 0 #000;
+	border:0;
+	opacity: 0.66; 
+}
+.grey {background:white; color:#444}
+.text_button_example:hover {box-shadow: 1px 2px 4px 0 #666;color:#222;}
+.text_button_example:active {top:2px;box-shadow:none;}
+
+/*кнопка - загрузить*/
+#upload-form {position:relative;width:300px;}
+input[type=file]{position:absolute;width:300px;height:48px;font-size:99px;opacity:0;filter:alpha(opacity=0);top:0;visibility:hidden;}
+.text_button_upload{
+	text-align: center;
+	background:#1cbb81;
+	color:#fff;
+	line-height: 48px;
+    font-size: 22px;
+	margin-bottom: 8px;
+	box-shadow: 1px 2px 4px 0 #000;
+}
+.text_button_upload:hover {cursor:pointer;box-shadow: 1px 2px 4px 0 #666; text-decoration: underline;}
+.text_button_upload:active {top:2px;box-shadow:none;}
+
+/*блок загрузки файла*/
+.progress {display:none;position:relative;width:300px;border:1px solid #ccc;padding:1px;border-radius:4px;}
+.bar { background-color:#66d6ad;width:0%;height:36px;border-radius: 4px;}
+.percent {line-height:40px;position:absolute;display:inline-block;top: 1px;left: 45%;color: #fff;}
+
+/*маленький текст под кнопкой загрузить*/
+.text_small {text-align:center;display:block;margin-bottom:20px;font-size:13px; font-style:italic;color:#333;}
+
+
+/*-------------------------------------------------------------------------*/
+/*инструкция по настройке "контект"*/
+/*-------------------------------------------------------------------------*/
+
+/*переключатель инструкции*/
+.buttons_tabs {margin-bottom: 30px; margin-top: 10px; list-style: none;}
+.buttons_tabs a { text-decoration: none; margin:10px 0 30px 0;}
+.buttons_tabs a:hover{ text-decoration: underline;}
+.buttons_tabs .active a {font-weight: bold; text-decoration: underline;}
+.buttons_tabs .active a:hover{font-weight: bold; text-decoration: underline;}
+
+/*контейнеры инструкции*/
+.tabs_with_help {margin-bottom:20px; display: none;}
+.tabs_with_help_buttons {list-style: none;}
+.tabs_with_help_buttons li {float: left; position:relative; z-index:5; margin-bottom:60px;}
+.tabs_with_help_buttons li:last-child {float: right;}
+.tabs_with_help_buttons a {display: block; padding-bottom:5px;}
+.tabs_with_help_buttons a:hover,
+.tabs_with_help_buttons li.active a,
+.tabs_with_help_buttons li:first-child a {border-bottom:1px solid #000;}
+.tabs_with_help_buttons span {font-size:24px;}
+
+.manual_content_item {display: none; position:relative; z-index:4;}
+.manual_content_item:first-child {display: block;}
+
+/*скачать пример виртуального 3d тура*/
+.text_link_download {margin: 3px 0 20px; color: #20c186; padding-bottom: 18px; display:inline-block;}
+.text_link_download:hover {text-decoration: underline;}
+
+/*разделы инструкций*/
+.manual_item {position: relative; padding-top: 30px;}
+
+/*номер инструкции*/
+.text_number_manual{
+	display: inline-block;
+	float: left;
+	padding: 6px 22px 10px;
+	font-size: 38px;
+	color: #fff;
+	background: #000;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+
+/*текст в первом номере инструкции*/
+.manual_item_first {margin-top: 3px; font-family: 'calibri';}
+.text_manual_item_first {float: right; padding-top: 20px; width: 1110px;}
+
+/*отступ для абзаца*/
+.indent_paragraph {margin-left: 37px;}
+
+/*разметка текста и картинки в первом номере инструкции*/
+.manual_item_first_photo{clear: both; padding-top: 33px;}
+.manual_item_first_photo img{display: inline-block; margin-left: 90px; width: 620px; height: 300px;}
+.text_italic {float: right; width: 395px;}
+.text_italic p {font-size: 18px; font-weight: 200; font-style: italic; line-height: 1.4; text-align: justify;}
+
+/*картинки в инструкциях*/
+.manual_item img {float: right; margin-top: 32px; }
+
+/*текст в инструкции по левую сторону (600px)*/
+.manual_text_position_left_long {float: left; margin-left: 21px; padding-top: 30px; width: 600px;}
+.manual_text_position_left_long p {font-weight: 200; color: #1f1f1f;}
+/*текст в инструкции по левую сторону (395px)*/
+.manual_text_position_left_short {float: left; margin-left: 21px; padding-top: 30px; width: 395px;}
+.manual_text_position_left_short p {font-size: 22px; font-weight: 200; color: #1f1f1f;}
+.manual_text_position_left_short p:last-child {font-style: italic; font-size: 18px;}
+
+
+/*важное сообщение*/
+.alert {color:#f00; margin-bottom: 30px; text-align: center;}
+
+/* Eto dobavlyaetsya vishe chtob sdelat ten
+	box-shadow: 2px 2px 20px rgba(0,0,0,1);
+	-webkit-box-shadow: 2px 2px 20px rgba(0,0,0,1);
+	-moz-box-shadow: 2px 2px 20px rgba(0,0,0,1);
+	-ms-box-shadow: 2px 2px 20px rgba(0,0,0,1);
+	-o-box-shadow: 2px 2px 20px rgba(0,0,0,1);
+*/
+
+/*кнопка скролла вверх*/
+.button_up {position:fixed;left:0;top:50%;margin-top:-56px;width:62px;height:111px;background:url(up.png) no-repeat;opacity:0.8;z-index:50;}
+.button_up:hover {opacity:1;}
+
+/*3Д блок в шапке*/
+#pano {z-index:1000;}
+
+/*кнопки, чтобы поделится в соц. сетях*/
+.pluso{margin-top: 10px; float: right;}
+
+/*условия использования*/
+.using{
+	display: inline-block;
+	float: right;
+	margin-top: 33px;
+	margin-right: 240px;
+	font: 18px 'calibri';
+	color: #a9a9a9;
+	text-decoration: none;
+}
+
+/*яндекс метрика*/
+.yandex{float: left; padding-top: 20px;}
+	
+
+
+/*----------------------------------------------------*/
+/*новая страница без кнопки регистрации*/
+/*----------------------------------------------------*/
+.header_flex {
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    box-sizing: border-box;
+    align-items: flex-end;
+        justify-content: space-between;
+    padding-top: 10px; padding-bottom: 10px;
+	height: 110px;
+	margin: 0;
+	bottom: 0;
+	width: 100%;
+}
+.h_flex_logo {
+	margin: 0 !important;
+	text-align: center;
+	 -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+    -webkit-box-ordinal-group: 1;
+    box-ordinal-group: 1;
+}
+.text_only_logo__mod {color: #000; width: 100%;}
+.h_menu_flex {
+	padding-bottom: 15px;
+	text-align: center;
+	list-style: none;
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+    -webkit-box-ordinal-group: 2;
+    box-ordinal-group: 2;
+}
+.h_menu_flex li {display: inline-block; vertical-align: middle; margin-right: 30px;}
+.h_menu_flex li:last-child {margin-right: 0;}
+
+.h_menu_flex a {text-decoration: none;}
+.h_menu_flex a:hover {border-bottom:1px solid #000;}
+
+.buttons__mod {margin-top: -100px;}
+#pano {position: relative;}
+.pano_height iframe {height: 565px !important;}
+.text_only_main_page__mod {position: absolute; top: 30px; left: 50px; z-index: 5;}
+
+
+/*---------------------------------------------------------------------------------*/
+/*Не знаю для чего эти стили. Они нигде не применяются в данный момент*/
+ol.text {margin-left:20px;}
+.text li {margin-bottom:30px;padding-left:20px;}
+.text li img {display:block;margin:20px auto 0;}
+.text li ul li {margin:20px 0 0 20px;}
+.form {background:rgba(255,255,255,0.5);width:500px;margin:30px auto;padding:20px;}
+.form .title {margin-top:0;text-align:center;}
+.form .line {display:table;margin-bottom:20px;}
+.form .line label {display:inline-block;vertical-align:top;margin-right:20px;width:100px;}
+.form textarea,.form input[type='text'],.form input[type='email'] {width:355px;padding:10px;font-size:14px;box-shadow:2px 2px 2px 0 #ccc inset;border:0;}
+.form .btn {display:inline-block;margin:5px 0 5px 120px;}
+.full {height:100%;}
+.box {position:absolute;width:460px;left:40px;top:40px;background:rgba(255,255,255,0.5);padding:20px;z-index:1000;}
+.box .title {margin-top:0;margin-bottom:15px;}
+.box  a {display:inline-block;margin-top:15px;}
+.box .goback {display:inline-block;position:relative;top:-10px;left:0;margin: 0;}
+
+
+
+
+
+

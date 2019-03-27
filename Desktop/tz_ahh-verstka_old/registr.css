@@ -1,0 +1,105 @@
+* {padding:0;margin:0;}
+/* font-family: "RobotoLight"; */
+@font-face {
+    font-family: "RobotoLight";
+    src: url("/fonts/RobotoLight/RobotoLight.eot");
+    src: url("/fonts/RobotoLight/RobotoLight.eot?#iefix")format("embedded-opentype"),
+    url("/fonts/RobotoLight/RobotoLight.woff") format("woff"),
+    url("/fonts/RobotoLight/RobotoLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+body {font-family: 'Calibri', sans-serif; background: url(/background_main.gif) repeat;}
+.clear{clear: both;}
+.clearfix:before,
+.clearfix:after {content: " "; display: table;}
+.clearfix:after {clear: both;}
+
+/*разметка*/
+.center_container {margin: 0 auto; width: 1200px;}
+
+/*логотип*/
+.head_logo {padding: 35px 0 15px;}
+.head_logo a {transition: all 0.5s;}
+.head_logo a:hover {opacity: 0.7;}
+.head_logo p {float: right; margin-top: 33px; font-size: 24px;}
+/*кнопка возврата обратно на главную страницу*/
+.back_page a {float: left; margin: 0 0 20px; font-size: 18px; text-decoration: none; color: #333;}
+.back_page a:hover{color: #C34E3D;}
+
+/*большая картинка*/
+.big_img_page_registr {text-align: center;}
+
+/*-------------------------------------------------------------------------*/
+/*преимущества*/
+/*-------------------------------------------------------------------------*/
+.advantages .center_container {margin-top: 65px;}
+.advantage_item {float: left; width: 207px; text-align: center;}
+.advantage_item + .advantage_item {margin-left: 41px;}
+.advantage_item p{
+	margin-top: 21px;
+	text-align: left;
+	font: 18px 'RobotoLight';
+	font-weight: 100;
+	line-height: 1.3;
+	color: #333;
+}
+.advantage_item p span {display: inline-block; margin-left: 40px;}
+
+/*-------------------------------------------------------------------------*/
+/*таймер обратного отчета*/
+/*-------------------------------------------------------------------------*/
+.time{
+	margin: 62px 0 0;
+	padding: 30px 0;
+	background: #C34E3D;
+	color: #fff;
+	text-align: center;
+	height: 310px;
+}
+.title_countdown {font-size: 30px; text-transform: uppercase; line-height: .7;}
+.container {margin: 0 auto;}
+
+/*-------------------------------------------------------------------------*/
+/*подвал*/
+/*-------------------------------------------------------------------------*/
+footer {margin-top: -20px; padding: 30px 0; background: #C34E3D;}
+footer .center_container{padding-bottom: 50px;}
+footer p {font: 21px 'Calibri'; font-weight: 400; margin-bottom: 35px;}
+/*форма регистрации*/
+footer input[type="text"],input[type="password"]{
+	margin-top: 27px;
+	padding: 0 60px;
+	width: 378px;
+	height: 76px;
+	border: 2px solid #fff;
+	background: none;
+	font-size: 42px;
+	color: #fff;
+	border-radius: 2px;
+}
+.form_registr_part_right {width: 500px; float: right;}
+.form_registr_part_left {width: 500px; float: left;}
+footer ::-webkit-input-placeholder { /* WebKit browsers */ color: #fff; opacity: 1; font-size: 42px;}
+footer ::-moz-placeholder { /* Mozilla Firefox 4 to 18 */ color: #fff; opacity: 1; font-size: 42px;}
+footer :-ms-input-placeholder { /* Internet Explorer 10+ */ color: #fff; opacity: 1; font-size: 42px;}
+footer ::-o-placeholder { /* Opera */ color: #fff; opacity: 1; font-size: 42px;}
+footer input[type="submit"]{
+	margin-top: 27px;
+	width: 498px;
+	height: 76px;
+	border: 2px solid #fff;
+	background: #27bd73;
+	font-size: 42px;
+	color: #fff;
+	border-radius: 2px;
+	cursor: pointer;
+	transition: all .5s;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-ms-transition: all .5s;
+	-o-transition: all .5s;
+}
+footer input[type="submit"]:hover{ background: #fff; color: #27bd73;}
+
+
